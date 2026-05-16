@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AURA DOMUS — премиальный шаблон для элитного интерьерного и ландшафтного дизайна с интерактивным выбором стиля, портфолио, квизом и заявками в Telegram." />
+  <title>AURA DOMUS | Elite Interior & Landscape Design</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-loft">
+  <a class="skip-link" href="#portfolio" data-i18n="accessibility.skip">Перейти к портфолио</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Главная навигация">
+      <a class="brand" href="#top" aria-label="AURA DOMUS">
+        <span class="brand__sigil" aria-hidden="true"><img src="assets/aura-domus-logo.png" alt="" loading="eager" /></span>
+        <span class="brand__copy">
+          <strong>AURA DOMUS</strong>
+          <small data-i18n="brand.subline">Premium Design Atelier</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNavigation" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-list" id="mainNavigation">
+        <li><a href="#styles" data-i18n="nav.styles">Стили</a></li>
+        <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">Портфолио</a></li>
+        <li><a href="#calculator" data-i18n="nav.calculator">Интерактивный расчет</a></li>
+        <li><a href="#contacts" data-i18n="nav.contacts">Контакты</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Переключатель языка">
+          <button class="language-switch__button is-active" type="button" data-lang="ru">RU</button>
+          <button class="language-switch__button" type="button" data-lang="kg">KG</button>
+        </div>
+        <a class="button button--gold button--small" href="#calculator" data-i18n="nav.cta">Обсудить проект</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__atmosphere" aria-hidden="true"></div>
+      <div class="hero__texture" aria-hidden="true"></div>
+
+      <div class="hero__grid container">
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Элитные интерьеры и ландшафты под ключ</p>
+          <h1 class="hero__title" id="heroTitle" data-i18n="hero.title">Дорогой дизайн.</h1>
+          <p class="hero__lead" data-i18n="hero.lead">Интерьеры, ландшафты и приватные пространства с сильной визуальной подачей для жизни, продаж и контента в TikTok.</p>
+
+          <div class="hero__actions">
+            <a class="button button--gold" href="#calculator" data-i18n="hero.primaryCta">Рассчитать стоимость</a>
+            <a class="button button--ghost" href="#portfolio" data-i18n="hero.secondaryCta">Смотреть портфолио</a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Показатели проекта">
+            <article>
+              <strong>48</strong>
+              <span data-i18n="hero.metricOne">премиальных объектов</span>
+            </article>
+            <article>
+              <strong>12k м²</strong>
+              <span data-i18n="hero.metricTwo">интерьеров и ландшафтов</span>
+            </article>
+            <article>
+              <strong>360°</strong>
+              <span data-i18n="hero.metricThree">ведение до реализации</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="philosophy-switch" aria-label="Выбор дизайн-философии" data-reveal>
+          <div class="philosophy-switch__header">
+            <span data-i18n="hero.chooseLabel">Выберите визуальную философию</span>
+          </div>
+
+          <button class="split-card split-card--loft is-active" type="button" data-style="loft">
+            <span class="split-card__number">01</span>
+            <strong data-i18n="hero.loftTitle">INDUSTRIAL LOFT</strong>
+            <small data-i18n="hero.loftText">Графит, бетон, металл, янтарный неон и brutal luxury.</small>
+          </button>
+
+          <button class="split-card split-card--oldmoney" type="button" data-style="oldmoney">
+            <span class="split-card__number">02</span>
+            <strong data-i18n="hero.oldTitle">QUIET LUXURY</strong>
+            <small data-i18n="hero.oldText">Мрамор, кремовые тона, латунь, шелк и аристократичная тишина.</small>
+          </button>
+
+          <button class="split-card split-card--minimal" type="button" data-style="minimal">
+            <span class="split-card__number">03</span>
+            <strong data-i18n="hero.minimalTitle">MODERN MINIMAL</strong>
+            <small data-i18n="hero.minimalText">Чистые линии, воздух, архитектурный свет и дорогая простота.</small>
+          </button>
+
+          <button class="split-card split-card--bio" type="button" data-style="bio">
+            <span class="split-card__number">04</span>
+            <strong data-i18n="hero.bioTitle">BIOPHILIC OASIS</strong>
+            <small data-i18n="hero.bioText">Сады, вода, натуральный камень, дерево и ощущение private resort.</small>
+          </button>
+
+          <button class="split-card split-card--japandi" type="button" data-style="japandi">
+            <span class="split-card__number">05</span>
+            <strong data-i18n="hero.japandiTitle">JAPANDI CALM</strong>
+            <small data-i18n="hero.japandiText">Японская тишина, скандинавское тепло и тактильные материалы.</small>
+          </button>
+
+          <button class="split-card split-card--hitech" type="button" data-style="hitech">
+            <span class="split-card__number">06</span>
+            <strong data-i18n="hero.hitechTitle">FUTURE LUXURY</strong>
+            <small data-i18n="hero.hitechText">Умный дом, темное стекло, хром, LED-сценарии и технологичный вау-эффект.</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-lab section" id="styles" aria-labelledby="stylesTitle">
+      <div class="container section__header" data-reveal>
+        <p class="eyebrow" data-i18n="styles.eyebrow">Больше визуальных сценариев</p>
+        <h2 id="stylesTitle" data-i18n="styles.title">Шесть направлений, чтобы клиент сразу увидел свой масштаб.</h2>
+        <p data-i18n="styles.lead">Переключатель меняет не только цвет: он перестраивает свет, шрифтовое настроение, карточки, акценты и атмосферу всей страницы.</p>
+      </div>
+
+      <div class="container style-gallery" id="styleGallery" aria-live="polite"></div>
+
+      <div class="container mood-board" aria-label="Visual moodboard">
+        <article class="mood-board__copy glass-card" data-reveal>
+          <p class="eyebrow" data-i18n="mood.eyebrow">Фото-атмосфера</p>
+          <h3 data-i18n="mood.title">Больше живых визуалов прямо в блоке стилей.</h3>
+          <p data-i18n="mood.lead">Клиент сразу видит фактуры, свет, материалы, садовые сценарии и премиальную глубину проекта.</p>
+        </article>
+        <figure class="mood-shot mood-shot--large" data-reveal>
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85" alt="Премиальная гостиная с темным стеклом и мягким светом" loading="lazy" />
+          <figcaption data-i18n="mood.cardOne">Future living room</figcaption>
+        </figure>
+        <figure class="mood-shot" data-reveal>
+          <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=85" alt="Светлая кухня в эстетике quiet luxury" loading="lazy" />
+          <figcaption data-i18n="mood.cardTwo">Quiet kitchen</figcaption>
+        </figure>
+        <figure class="mood-shot" data-reveal>
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Современная зона отдыха с архитектурным светом" loading="lazy" />
+          <figcaption data-i18n="mood.cardThree">Soft lounge</figcaption>
+        </figure>
+        <figure class="mood-shot" data-reveal>
+          <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Минималистичный интерьер с чистыми линиями" loading="lazy" />
+          <figcaption data-i18n="mood.cardFour">Minimal volume</figcaption>
+        </figure>
+        <figure class="mood-shot" data-reveal>
+          <img src="https://images.unsplash.com/photo-1600607688960-e095ff83135c?auto=format&fit=crop&w=900&q=85" alt="Ландшафтная зона с водой и зеленью" loading="lazy" />
+          <figcaption data-i18n="mood.cardFive">Private garden</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolioTitle">
+      <div class="container section__header" data-reveal>
+        <p class="eyebrow" data-i18n="portfolio.eyebrow">Портфолио для вау-контента</p>
+        <h2 id="portfolioTitle" data-i18n="portfolio.title">Проекты, которые хочется показывать крупным планом.</h2>
+        <p data-i18n="portfolio.lead">Интерьеры и ландшафты собраны в кинематографичную сетку: масштаб, свет, материалы и ощущение дорогого объекта.</p>
+      </div>
+
+      <div class="container before-after-layout">
+        <div class="before-after" id="beforeAfter" data-reveal>
+          <img class="before-after__image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85" alt="Готовый премиальный интерьер после реализации" />
+          <div class="before-after__before" id="beforeLayer">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80" alt="Пространство до дизайн-проекта" />
+          </div>
+          <button class="before-after__handle" id="beforeHandle" type="button" aria-label="Передвинуть шторку до и после">
+            <span></span>
+          </button>
+          <div class="before-after__labels" aria-hidden="true">
+            <span data-i18n="portfolio.before">До</span>
+            <span data-i18n="portfolio.after">После</span>
+          </div>
+        </div>
+
+        <div class="portfolio-copy glass-card" data-reveal>
+          <p class="eyebrow" data-i18n="portfolio.sliderEyebrow">Интерактив до / после</p>
+          <h3 data-i18n="portfolio.sliderTitle">До / после для TikTok: один свайп — и проект оживает.</h3>
+          <p data-i18n="portfolio.sliderText">Клиент видит не просто красивые картинки, а путь от пустого бетона или участка до полноценного премиального пространства.</p>
+        </div>
+      </div>
+
+      <div class="container project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="services section" id="services" aria-labelledby="servicesTitle">
+      <div class="container section__header" data-reveal>
+        <p class="eyebrow" data-i18n="services.eyebrow">Услуги и цены</p>
+        <h2 id="servicesTitle" data-i18n="services.title">От концепции до полностью готового объекта.</h2>
+        <p data-i18n="services.lead">Мы берем на себя визуальную стратегию, документацию, комплектацию, надзор и финальную атмосферу.</p>
+      </div>
+
+      <div class="container service-grid" id="serviceGrid"></div>
+    </section>
+
+    <section class="process section" aria-labelledby="processTitle">
+      <div class="container process-layout">
+        <div class="section__header" data-reveal>
+          <p class="eyebrow" data-i18n="process.eyebrow">Как строится проект</p>
+          <h2 id="processTitle" data-i18n="process.title">Премиальный результат начинается с точной системы.</h2>
+          <p data-i18n="process.lead">Мы показываем понятный маршрут от первого сообщения до финальной визуальной концепции, чтобы клиент сразу чувствовал масштаб.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card glass-card" data-reveal>
+            <span>01</span>
+            <h3 data-i18n="process.stepOneTitle">Бриф и стиль</h3>
+            <p data-i18n="process.stepOneText">Фиксируем объект, вкус, бюджет, нужные сценарии жизни и визуальную философию.</p>
+          </article>
+          <article class="process-card glass-card" data-reveal>
+            <span>02</span>
+            <h3 data-i18n="process.stepTwoTitle">Концепция</h3>
+            <p data-i18n="process.stepTwoText">Собираем moodboard, планировочную логику, материалы, свет и ключевые кадры.</p>
+          </article>
+          <article class="process-card glass-card" data-reveal>
+            <span>03</span>
+            <h3 data-i18n="process.stepThreeTitle">Визуализация</h3>
+            <p data-i18n="process.stepThreeText">Даем эффектные ракурсы, понятные решения и презентацию, которую хочется пересматривать.</p>
+          </article>
+          <article class="process-card glass-card" data-reveal>
+            <span>04</span>
+            <h3 data-i18n="process.stepFourTitle">Передача</h3>
+            <p data-i18n="process.stepFourText">Финализируем пакет материалов, рекомендации и следующий шаг по реализации.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator section" id="calculator" aria-labelledby="calculatorTitle">
+      <div class="container calculator-layout">
+        <div class="calculator-copy" data-reveal>
+          <p class="eyebrow" data-i18n="quiz.eyebrow">Интерактивный расчет</p>
+          <h2 id="calculatorTitle" data-i18n="quiz.title">Получите ориентир по бюджету до первой встречи.</h2>
+          <p data-i18n="quiz.lead">Ответьте на 3 вопроса. Анкета отправится через Telegram endpoint или будет подготовлена для ручной отправки владельцу.</p>
+        </div>
+
+        <div class="quiz-card glass-card" id="quizMount" data-reveal aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts" aria-labelledby="contactsTitle">
+      <div class="container contacts-layout">
+        <div class="contact-map contact-showcase glass-card" data-reveal>
+          <span class="contact-orbit" aria-hidden="true"></span>
+          <div>
+            <p class="eyebrow" data-i18n="contacts.mapLabel">Онлайн и выезд</p>
+            <h2 data-i18n="contacts.mapTitle">Работаем онлайн и на объекте</h2>
+            <p data-i18n="contacts.mapText">Принимаем заявки онлайн, обсуждаем проект в Telegram и выезжаем на объект по договоренности — без лишних офисных формальностей.</p>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="consultationForm" data-reveal novalidate>
+          <p class="eyebrow" data-i18n="forms.eyebrow">Быстрая консультация</p>
+          <h2 id="contactsTitle" data-i18n="forms.title">Расскажите о проекте.</h2>
+
+          <label>
+            <span data-i18n="forms.nameLabel">Ваше имя</span>
+            <input type="text" name="name" autocomplete="name" data-i18n-placeholder="forms.namePlaceholder" placeholder="Например, Алина" required />
+            <small class="field-error" aria-live="polite"></small>
+          </label>
+
+          <label>
+            <span data-i18n="forms.contactLabel">Телефон или Telegram</span>
+            <input type="text" name="contact" autocomplete="tel" data-i18n-placeholder="forms.contactPlaceholder" placeholder="+996 ... или @username" required />
+            <small class="field-error" aria-live="polite"></small>
+          </label>
+
+          <label>
+            <span data-i18n="forms.messageLabel">Что нужно спроектировать?</span>
+            <textarea name="message" rows="4" data-i18n-placeholder="forms.messagePlaceholder" placeholder="Дом, участок, пентхаус, ресторан..."></textarea>
+          </label>
+
+          <button class="button button--gold" type="submit" data-i18n="forms.submit">Отправить в Telegram</button>
+          <p class="form-status" id="consultationStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#top" aria-label="AURA DOMUS">
+          <span class="brand__sigil" aria-hidden="true"><img src="assets/aura-domus-logo.png" alt="" loading="lazy" /></span>
+          <span class="brand__copy">
+            <strong>AURA DOMUS</strong>
+            <small data-i18n="brand.subline">Premium Design Atelier</small>
+          </span>
+        </a>
+        <p data-i18n="footer.copy">Премиальные интерьеры и ландшафты с сильной визуальной идентичностью.</p>
+      </div>
+
+      <div>
+        <h3 data-i18n="footer.socialTitle">Соцсети</h3>
+        <a href="https://www.tiktok.com/@110_jan" target="_blank" rel="noreferrer">TikTok @110_jan</a>
+        <a href="https://t.me/quvdp" target="_blank" rel="noreferrer">Telegram @quvdp</a>
+      </div>
+
+      <div>
+        <h3 data-i18n="footer.contactsTitle">Контакты</h3>
+        <p>Telegram: @quvdp</p>
+        <p data-i18n="footer.hours">Пн–Сб: 10:00–20:00</p>
+        <div class="language-switch language-switch--footer" aria-label="Переключатель языка в подвале">
+          <button class="language-switch__button is-active" type="button" data-lang="ru">RU</button>
+          <button class="language-switch__button" type="button" data-lang="kg">KG</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 AURA DOMUS</span>
+      <span data-i18n="footer.legal">Премиальный шаблон для дизайн-проектов. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
